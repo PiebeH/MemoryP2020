@@ -27,7 +27,7 @@
             <TextBlock DockPanel.Dock="Top" Foreground="White" FontSize="18">Select Category</TextBlock>
             <ComboBox Margin="10" DockPanel.Dock="Top" x:Name="categoryBox" FontSize="20" SelectedIndex="0">
                 <ComboBox.Items>
-                    <ComboBoxItem>Kids</ComboBoxItem>
+                    <ComboBoxItem>Ruimtevaart</ComboBoxItem>
                     <ComboBoxItem>Planeten</ComboBoxItem>
                     <ComboBoxItem>Films</ComboBoxItem>
                 </ComboBox.Items>

@@ -112,23 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\mystery_image.jpg" />
-    <Resource Include="Assets\Kids\kids 1.jpg" />
-    <Resource Include="Assets\Kids\kids 6.jpg" />
     <Content Include="Assets\background_music.mp3" />
-    <Resource Include="Assets\Kids\kids 2.jpg" />
-    <Resource Include="Assets\Kids\kids 3.jpg" />
-    <Resource Include="Assets\Kids\kids 5.jpg" />
-    <Resource Include="Assets\Kids\kids 7.jpg" />
-    <Resource Include="Assets\Kids\kids 8.jpg" />
-    <Resource Include="Assets\Kids\kids 4.jpg" />
-    <Resource Include="Assets\Films\Films 1.jpg" />
-    <Resource Include="Assets\Films\Films 2.jpg" />
-    <Resource Include="Assets\Films\Films 3.jpg" />
-    <Resource Include="Assets\Films\Films 4.jpg" />
-    <Resource Include="Assets\Films\Films 5.jpg" />
-    <Resource Include="Assets\Films\Films 6.jpg" />
-    <Resource Include="Assets\Films\Films 7.jpg" />
-    <Resource Include="Assets\Films\Films 8.jpg" />
     <Resource Include="Assets\Planeten\Planeten 1.jpg" />
     <Resource Include="Assets\Planeten\Planeten 2.jpg" />
     <Resource Include="Assets\Planeten\Planeten 3.jpg" />
@@ -138,6 +122,22 @@
     <Resource Include="Assets\Planeten\Planeten 7.jpg" />
     <Resource Include="Assets\Planeten\Planeten 8.jpg" />
     <Resource Include="Assets\black_background.jpg" />
+    <Resource Include="Assets\Films\Alien.jpg" />
+    <Resource Include="Assets\Films\Apollo13.jpg" />
+    <Resource Include="Assets\Films\Interstellar.jpg" />
+    <Resource Include="Assets\Films\SpaceOdyssey.jpg" />
+    <Resource Include="Assets\Films\StarTrek.jpg" />
+    <Resource Include="Assets\Films\StarWars.jpg" />
+    <Resource Include="Assets\Films\TheMartian.jpg" />
+    <Resource Include="Assets\Films\WallE.jpg" />
+    <Content Include="Assets\Ruimtevaart\Ruimtervaart 1.jpg" />
+    <Content Include="Assets\Ruimtevaart\Ruimtervaart 2.jpg" />
+    <Content Include="Assets\Ruimtevaart\Ruimtervaart 3.jpg" />
+    <Content Include="Assets\Ruimtevaart\Ruimtervaart 4.jpg" />
+    <Content Include="Assets\Ruimtevaart\Ruimtervaart 5.jpg" />
+    <Content Include="Assets\Ruimtevaart\Ruimtervaart 6.jpg" />
+    <Content Include="Assets\Ruimtevaart\Ruimtervaart 7.jpg" />
+    <Resource Include="Assets\Ruimtevaart\Ruimtervaart 8.jpg" />
     <Content Include="Assets\SoundEffects\card_flip.mp3" />
     <Content Include="Assets\SoundEffects\correct_match.mp3" />
     <Content Include="Assets\SoundEffects\incorrect_match.mp3" />

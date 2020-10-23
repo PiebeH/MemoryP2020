@@ -18,7 +18,7 @@ namespace MemoryGame.ViewModels
     //De thema's
     public enum SlideCategories
     {
-        Kids,
+        Ruimtevaart,
         Planeten,
         Films
     }
