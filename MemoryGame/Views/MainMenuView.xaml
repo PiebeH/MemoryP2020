@@ -25,7 +25,7 @@
                         <Button Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="#FFA1FFA1" FontSize="20">Play Again</Button>
                     </StackPanel>
                     <StackPanel Visibility="{Binding LostMessage}">
-                        <TextBlock Foreground="#000000">You Lost!</TextBlock>
+                        <TextBlock Foreground="#FFFF9085">You Lost!</TextBlock>
                         <Button Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="#FFFF9085" FontSize="20">Play Again</Button>
                     </StackPanel>
                 </DockPanel>
