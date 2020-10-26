@@ -23,7 +23,7 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock HorizontalAlignment="Center" Margin="10" Grid.ColumnSpan="4" Foreground="#FF00F3FF" FontSize="72" FontFamily="Global Monospace">C# Memory Game</TextBlock>
-        <DockPanel LastChildFill="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
+        <DockPanel LastChildFill="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="3">
             <TextBlock DockPanel.Dock="Top" Foreground="White" FontSize="18">Select Category</TextBlock>
             <ComboBox Margin="10" DockPanel.Dock="Top" x:Name="categoryBox" FontSize="20" SelectedIndex="0">
                 <ComboBox.Items>
@@ -32,7 +32,9 @@
                     <ComboBoxItem>Films</ComboBoxItem>
                 </ComboBox.Items>
             </ComboBox>
-            <Button DockPanel.Dock="Top" Padding="25" Click="Play_Clicked" Background="#FF0E0E0E" Foreground="#FFF3FF00" FontSize="18">Start Game</Button>
+            <Button DockPanel.Dock="Top" Padding="20" Click="Play_Clicked" Background="#FF0E0E0E" Foreground="#FFF3FF00" FontSize="18">Single Player</Button>
+            <Button DockPanel.Dock="Top" Padding="20" Click="Play_ClickedMulti" Background="#FF0E0E0E" Foreground="#FFF3FF00" FontSize="18">Multiplayer</Button>
+            <Button DockPanel.Dock="Top" Padding="20" Click="Play_HighScores" Background="#FF0E0E0E" Foreground="Red" FontSize="18">HighScores</Button>
         </DockPanel>
     </Grid>
 </UserControl>

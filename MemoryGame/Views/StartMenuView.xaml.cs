@@ -31,5 +31,17 @@ namespace MemoryGame.Views
             var startMenu = DataContext as ViewModels.StartMenuView;
             startMenu.StartNewGame(categoryBox.SelectedIndex);
         }
+
+        private void Play_ClickedMulti(object sender, RoutedEventArgs e)
+        {
+            var startMenu = DataContext as ViewModels.StartMenuView;
+            startMenu.StartNewGame(categoryBox.SelectedIndex);
+        }
+
+        private void Play_HighScores(object sender, RoutedEventArgs e)
+        {
+            var startMenu = DataContext as ViewModels.StartMenuView;
+            startMenu.StartNewGame(categoryBox.SelectedIndex);
+        }
     }
 }
