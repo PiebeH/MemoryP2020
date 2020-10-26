@@ -46,7 +46,8 @@ namespace MemoryGame.Views
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            System.Diagnostics.Process.Start(Application.ResourceAssembly.Location);
+            Application.Current.Shutdown();
         }
     }
 }
