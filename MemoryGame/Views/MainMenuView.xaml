@@ -16,7 +16,7 @@
             <DockPanel LastChildFill="True">
                 <DockPanel DataContext="{Binding GameInfo}" MinWidth="200">
                     <Button Background="#FF151515" Foreground="#FFA1FFA1" Hyperlink.Click="Button_Click" FontSize="20" Click="Button_Click_1">Main Menu</Button>
-                    <Button Background="#FF151515" Foreground="#FFFF9085" FontSize="20">Save Game</Button>
+                    <Button Background="#FF151515" Foreground="#FFFF9085" Click="SaveGame" FontSize="20">Save Game</Button>
                     <Button Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="#FFA1FFA1" FontSize="20">Reset</Button>
                 </DockPanel>
                 <DockPanel DataContext="{Binding GameInfo}" MinWidth="200" DockPanel.Dock="Right">

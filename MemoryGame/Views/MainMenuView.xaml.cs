@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace MemoryGame.Views
 {
@@ -41,13 +42,23 @@ namespace MemoryGame.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-          
+           
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start(Application.ResourceAssembly.Location);
             Application.Current.Shutdown();
+        }
+
+        private void SaveGame(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Saved");
+
+            using (var writer = new StreamWriter(@"C:\MemoryP2020\MemoryGame\SaveGame.sav"))
+            {
+                writer.WriteLine("HELLO");
+            }
         }
     }
 }
