@@ -35,6 +35,13 @@
             <Button DockPanel.Dock="Top" Padding="20" Click="Play_Clicked" Background="#FF0E0E0E" Foreground="#FFF3FF00" FontSize="18">Single Player</Button>
             <Button DockPanel.Dock="Top" Padding="20" Click="Play_ClickedMulti" Background="#FF0E0E0E" Foreground="#FFF3FF00" FontSize="18">Multiplayer</Button>
             <Button DockPanel.Dock="Top" Padding="20" Click="Play_HighScores" Background="#FF0E0E0E" Foreground="Red" FontSize="18">HighScores</Button>
+            <Button DockPanel.Dock="Top" Padding="20" Click="Save_Name" Background="#FF0E0E0E" Foreground="Red" FontSize="18">Save Name</Button>
+            <TextBox x:Name="nameInput"
+                Text="Enter your name"
+                TextChanged="textChangedEventHandler"
+                VerticalAlignment="Top"
+                DockPanel.Dock="Bottom"
+                 Width="300" HorizontalAlignment="center"/>
         </DockPanel>
     </Grid>
 </UserControl>

@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace MemoryGame.Views
 {
@@ -43,5 +44,25 @@ namespace MemoryGame.Views
             var startMenu = DataContext as ViewModels.StartMenuView;
             startMenu.StartNewGame(categoryBox.SelectedIndex);
         }
+
+
+        public string name;
+        private void textChangedEventHandler(object sender, TextChangedEventArgs args)
+        {
+            name = nameInput.Text;
+        }
+
+        private void Save_Name(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Name saved!");
+
+            using (var writer = new StreamWriter(@"C:\Users\Jan Ype de Jong\Desktop\MemoryP2020\MemoryGame\Name.sav"))
+            {
+                writer.WriteLine(name);
+            }
+        }
+
+
+
     }
 }
