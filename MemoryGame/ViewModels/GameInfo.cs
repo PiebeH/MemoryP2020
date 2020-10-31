@@ -109,5 +109,11 @@ namespace MemoryGame.ViewModels
             MatchAttempts--;
             SoundManager.PlayIncorrect();
         }
+        public static int finalscore;
+        public void SetScore()
+        {
+            finalscore = Score;
+        }
+
     }
 }

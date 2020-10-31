@@ -92,12 +92,14 @@ namespace MemoryGame.ViewModels
                 GameInfo.GameStatus(false);
                 Slides.RevealUnmatched();
                 Timer.Stop();
+                GameInfo.SetScore();
             }
 
             if(Slides.AllSlidesMatched)
             {
                 GameInfo.GameStatus(true);
                 Timer.Stop();
+                GameInfo.SetScore();
             }
         }
 

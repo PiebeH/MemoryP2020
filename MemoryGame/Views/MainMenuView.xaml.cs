@@ -51,13 +51,13 @@ namespace MemoryGame.Views
             Application.Current.Shutdown();
         }
 
-        private void SaveGame(object sender, RoutedEventArgs e)
+        public void SaveGame(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Saved");
 
-            using (var writer = new StreamWriter(@"C:\MemoryP2020\MemoryGame\SaveGame.sav"))
+            using (var writer = new StreamWriter(@"C:\Users\Jan Ype de Jong\Desktop\MemoryP2020\MemoryGame\SaveGame.sav"))
             {
-                writer.WriteLine("HELLO");
+                writer.WriteLine(StartMenuView.name + " " + GameInfo.finalscore);
             }
         }
     }

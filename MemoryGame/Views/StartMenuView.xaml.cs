@@ -46,7 +46,7 @@ namespace MemoryGame.Views
         }
 
 
-        public string name;
+        public static string name;
         private void textChangedEventHandler(object sender, TextChangedEventArgs args)
         {
             name = nameInput.Text;
