@@ -52,17 +52,17 @@ namespace MemoryGame.Views
             name = nameInput.Text;
         }
 
-        private void Save_Name(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Name saved!");
+        //private void Save_Name(object sender, RoutedEventArgs e)
+        //{
+        //    MessageBox.Show("Name saved!");
 
-            using (var writer = new StreamWriter(@"C:\Users\Jan Ype de Jong\Desktop\MemoryP2020\MemoryGame\Name.sav"))
-            {
-                writer.WriteLine(name);
-            }
-        }
+        //    using (var writer = new StreamWriter(@"C:\Users\moege\Source\Repos\MemoryP2020\MemoryGame\SaveGame.sav")) 
+        //        writer.WriteLine(name);
+        //    }
+        //}
 
 
 
     }
 }
+

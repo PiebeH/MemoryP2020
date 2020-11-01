@@ -11,18 +11,18 @@
         <DockPanel.Background>
             <ImageBrush ImageSource="/MemoryGame;component/Assets/black_background.jpg" Stretch="UniformToFill"/>
         </DockPanel.Background>
-        <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" Text="{Binding Timer.Time, StringFormat=Elapsed Time: {0}}" Foreground="#FF8AFF7E" FontSize="24" />
+        <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" Text="{Binding Timer.Time, StringFormat=Elapsed Time: {0}}" Foreground="White" FontSize="24" />
         <StackPanel Margin="10" DockPanel.Dock="Bottom">
             <DockPanel LastChildFill="True">
                 <DockPanel DataContext="{Binding GameInfo}" MinWidth="200">
-                    <Button Background="#FF151515" Foreground="#FFA1FFA1" Hyperlink.Click="Button_Click" FontSize="20" Click="Button_Click_1">Main Menu</Button>
-                    <Button Background="#FF151515" Foreground="#FFFF9085" Click="SaveGame" FontSize="20">Save Game</Button>
-                    <Button Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="#FFA1FFA1" FontSize="20">Reset</Button>
+                    <Button Background="#FF151515" Foreground="LightSeaGreen" Hyperlink.Click="Button_Click" FontSize="20" Click="Button_Click_1">Main Menu</Button>
+                    <Button Background="#FF151515" Foreground="PaleVioletRed" Click="SaveScore" FontSize="20">Save Score</Button>
+                    <Button Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="Yellow" FontSize="20">Reset</Button>
                 </DockPanel>
                 <DockPanel DataContext="{Binding GameInfo}" MinWidth="200" DockPanel.Dock="Right">
                     <StackPanel Visibility="{Binding WinMessage}">
-                        <TextBlock Foreground="#FF51FF00">You Won!</TextBlock>
-                        <Button Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="#FFA1FFA1" FontSize="20">Play Again</Button>
+                        <TextBlock Foreground="LightSkyBlue">You Won!</TextBlock>
+                        <Button Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="Blue" FontSize="20">Play Again</Button>
                     </StackPanel>
                     <StackPanel Visibility="{Binding LostMessage}">
                         <TextBlock Foreground="#FFFF9085">You Lost!</TextBlock>
@@ -30,8 +30,8 @@
                     </StackPanel>
                 </DockPanel>
                 <StackPanel DataContext="{Binding GameInfo}" HorizontalAlignment="Left" DockPanel.Dock="Left" Width="1000" RenderTransformOrigin="0.029,0.485">
-                    <TextBlock Text="{Binding Score, StringFormat=Score: {0}}" Foreground="#FFFFF163" FontSize="24" />
-                    <TextBlock Text="{Binding MatchAttempts, StringFormat=Attempts Left: {0}}" Foreground="#FFFF7D41" FontSize="22" />
+                    <TextBlock Text="{Binding Score, StringFormat=Score: {0}}" Foreground="White" FontSize="24" />
+                    <TextBlock Text="{Binding MatchAttempts, StringFormat=Attempts Left: {0}}" Foreground="White" FontSize="22" />
                 </StackPanel>
             </DockPanel>
         </StackPanel>

@@ -3,14 +3,14 @@
     "",
     "\\MemoryGame",
     "\\MemoryGame\\Assets",
-    "\\MemoryGame\\bin",
-    "\\MemoryGame\\bin\\Debug",
-    "\\MemoryGame\\bin\\Debug\\Assets",
-    "\\MemoryGame\\bin\\Debug\\Assets\\Ruimtevaart",
     "\\MemoryGame\\obj",
     "\\MemoryGame\\obj\\Debug",
+    "\\MemoryGame\\obj\\Debug\\TempPE",
+    "\\MemoryGame\\obj\\Release",
+    "\\MemoryGame\\obj\\Release\\Views",
+    "\\MemoryGame\\ViewModels",
     "\\MemoryGame\\Views"
   ],
-  "SelectedNode": "\\MemoryGame.sln",
+  "SelectedNode": "\\MemoryGame\\SaveGame.sav",
   "PreviewInSolutionExplorer": false
 }
