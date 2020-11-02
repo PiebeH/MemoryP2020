@@ -41,8 +41,9 @@ namespace MemoryGame.Views
 
         private void Play_HighScores(object sender, RoutedEventArgs e)
         {
-            var startMenu = DataContext as ViewModels.StartMenuView;
-            startMenu.StartNewGame(categoryBox.SelectedIndex);
+            string filename = @"C:\Users\moege\Source\Repos\MemoryP2020\MemoryGame\SaveGame.sav";
+            string content = File.ReadAllText(filename);
+            MessageBox.Show(content, "HighScore:");
         }
 
 
@@ -52,14 +53,7 @@ namespace MemoryGame.Views
             name = nameInput.Text;
         }
 
-        //private void Save_Name(object sender, RoutedEventArgs e)
-        //{
-        //    MessageBox.Show("Name saved!");
-
-        //    using (var writer = new StreamWriter(@"C:\Users\moege\Source\Repos\MemoryP2020\MemoryGame\SaveGame.sav")) 
-        //        writer.WriteLine(name);
-        //    }
-        //}
+        
 
 
 

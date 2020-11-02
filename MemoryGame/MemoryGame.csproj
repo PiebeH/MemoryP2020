@@ -124,9 +124,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\greenblock.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Assets\mystery_image.jpg" />
     <Content Include="Assets\background_music.mp3" />
     <Resource Include="Assets\Planeten\Planeten 1.jpg" />
