@@ -16,8 +16,10 @@
             <DockPanel LastChildFill="True">
                 <DockPanel DataContext="{Binding GameInfo}" MinWidth="200">
                     <Button FontFamily="copperplate gothic" Background="#FF151515" Foreground="LightSeaGreen" Hyperlink.Click="Button_Click" FontSize="18" Click="Button_Click_1">Main Menu</Button>
-                    <Button FontFamily="copperplate gothic" Background="#FF151515" Foreground="PaleVioletRed" Click="SaveScore" FontSize="18">Save Score</Button>
                     <Button FontFamily="copperplate gothic" Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="Yellow" FontSize="18"> Reset </Button>
+                    <StackPanel Visibility="{Binding WinMessage}">
+                        <Button Padding="16.6" FontFamily="copperplate gothic" Background="#FF151515" Foreground="PaleVioletRed" Click="SaveScore" FontSize="18">Save Score</Button>
+                    </StackPanel>
                 </DockPanel>
                 <DockPanel DataContext="{Binding GameInfo}" MinWidth="200" DockPanel.Dock="Right">
                     <StackPanel Visibility="{Binding WinMessage}">
