@@ -15,18 +15,18 @@
         <StackPanel Margin="10" DockPanel.Dock="Bottom">
             <DockPanel LastChildFill="True">
                 <DockPanel DataContext="{Binding GameInfo}" MinWidth="200">
-                    <Button FontFamily="copperplate gothic" Background="#FF151515" Foreground="LightSeaGreen" Hyperlink.Click="Button_Click" FontSize="20" Click="Button_Click_1">Main Menu</Button>
-                    <Button FontFamily="copperplate gothic" Background="#FF151515" Foreground="PaleVioletRed" Click="SaveScore" FontSize="20">Save Score</Button>
-                    <Button FontFamily="copperplate gothic" Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="Yellow" FontSize="20"> Reset </Button>
+                    <Button FontFamily="copperplate gothic" Background="#FF151515" Foreground="LightSeaGreen" Hyperlink.Click="Button_Click" FontSize="18" Click="Button_Click_1">Main Menu</Button>
+                    <Button FontFamily="copperplate gothic" Background="#FF151515" Foreground="PaleVioletRed" Click="SaveScore" FontSize="18">Save Score</Button>
+                    <Button FontFamily="copperplate gothic" Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="Yellow" FontSize="18"> Reset </Button>
                 </DockPanel>
                 <DockPanel DataContext="{Binding GameInfo}" MinWidth="200" DockPanel.Dock="Right">
                     <StackPanel Visibility="{Binding WinMessage}">
                         <TextBlock FontFamily="copperplate gothic" Foreground="LightSkyBlue">You Won!</TextBlock>
-                        <Button FontFamily="copperplate gothic" Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="Blue" FontSize="20">Play Again</Button>
+                        <Button FontFamily="copperplate gothic" Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="Blue" FontSize="18">Play Again</Button>
                     </StackPanel>
                     <StackPanel Visibility="{Binding LostMessage}">
                         <TextBlock FontFamily="copperplate gothic" Foreground="#FFFF9085">You Lost!</TextBlock>
-                        <Button FontFamily="copperplate gothic" Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="#FFFF9085" FontSize="20">Play Again</Button>
+                        <Button FontFamily="copperplate gothic" Padding="10" Background="#FF151515" Click="PlayAgain_C" Foreground="#FFFF9085" FontSize="18">Play Again</Button>
                     </StackPanel>
                 </DockPanel>
                 <StackPanel DataContext="{Binding GameInfo}" VerticalAlignment="Center" HorizontalAlignment="Left" DockPanel.Dock="Left" Width="1000" RenderTransformOrigin="0.029,0.485">
